@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datorium Responsive</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="main-logo">
+            <img src="resources/datorium.png">
+            <span>Responsive</span>
+        </div>
+
+        <i class="material-icons menu-button" onclick="toggleMenu()">menu</i>
+    </header>
+    <main>
+        <aside>
+            <a href="index.html"><i class="material-icons">speed</i> Dashboard</a>
+            <a><i class="material-icons">description</i> Orders</a>
+            <a><i class="material-icons">help</i> Help</a>
+            <a href="settings.html"><i class="material-icons">settings</i> Settings</a>
+        </aside>
+        <article>
+            <section class="financials">
+                <div>
+                    Sales
+                    <span class="figure">€ 1,000,000</span>
+                </div>
+                <div>
+                    Expenses
+                    <span class="figure">€ 600,000</span>
+                </div>
+                <div>
+                    Orders
+                    <span class="figure">200,000</span>
+                </div>
+                <div>
+                    Growth
+                    <span class="figure">+10 %</span>
+                </div>
+            </section>
+            <!-- Add a 3rd (another one) product
+                 * set correct number
+                 * Choose a name
+                 * Change price, inventory, orders -->
+            <section class="products component">
+                <div class="component-header">Products</div>
+            </section>
+            <section class="calculator component">
+                <div class="component-header">
+                    Calculator
+                </div>
+                <input class="result" type="number" value="0" /><br>
+                <div class="buttons">
+                    <input type="button" value="CLEAR" onclick="clearCalculator()" />
+                    <input type="button" value="=" onclick="useCalculator('equals')"/>
+                    <input type="button" value="+" onclick="useCalculator('add')" />
+                    <input type="button" value="-" onclick="useCalculator('subtract')" />
+                    <input type="button" value="x" onclick="useCalculator('multiply')" />
+                    <input type="button" value="/" onclick="useCalculator('divide')" />
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="main.js"></script>
+<script src="basics.js"></script>
+<script src="calculator.js"></script>
