@@ -13,10 +13,8 @@ header {
     width: calc(100% - 20px);
     height: 40px;
     background-color: #1976d2;
-    /* How to center vertically */
     display: flex;
     align-items: center;
-    /* Place items on opposite sides of element */
     justify-content: space-between;
 }
 
@@ -64,18 +62,11 @@ article {
     width: calc(100% - 225px);
     height: 100%;
 }
-
-/* 1. Select all of the navigation buttons */
-/* display each
-in a new line */
-/* BONUS: Make the visibility 60% */
-
 aside a {
     color: #ffffff;
     font-size: 16px;
     opacity: 0.6;
     margin: 20px 0 20px 20px;
-    /* Center items vertically */
     display: flex;
     align-items: center;
 }
@@ -102,9 +93,6 @@ aside a .material-icons {
     aside.show {
         display: flex;
     }
-
-    /* For small devices hide the icons */
-    /* setting font-size 20px for small devices on navigation */
     aside a .material-icons {
         display: none;
     }
@@ -121,15 +109,6 @@ aside a .material-icons {
         width: 100%;
     }
 }
-
-
-
-/**
- * ======================
- * MOBILE FIRST APPROACH
- * ======================
- */
-
 .financials {
     margin: 20px;
     width: calc(100% - 40px);
@@ -150,7 +129,6 @@ aside a .material-icons {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     box-sizing: border-box;
     padding: 25px;
 }
@@ -235,14 +213,6 @@ aside a .material-icons {
 .product > div:not(:first-child) > div:nth-child(2) {
     justify-content: flex-end;
 }
-
-/* 
- * Select the input field for calculator
- * width should be the full 100% with 20px margins on both sides
- * put spacing below the element as 15px;
- * height to 40px
- * TEXT styling: color #444444, "Courier New" font, size 26px, make it bold
- */
 .calculator .result {
     margin: 0px 20px 15px 20px;
     width: calc(100% - 40px);
@@ -253,14 +223,6 @@ aside a .material-icons {
     font-weight: bold;
     box-sizing: border-box;
 }
-
-/*
- * select buttons wrapper 
- * put margins as top 0px sides 20px bottom 10px
- * width as full 100% 
- * flex in a row that wraps 
- * justify content as space-between
- */
 .calculator .buttons {
     margin: 0px 20px 10px 20px;
     width: calc(100% - 40px);
@@ -269,14 +231,6 @@ aside a .material-icons {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-/*
- * select the individual buttons
- * margin bottom as 10px;
- * width at 48%
- * height at 40px;
- * text color as #444444, size 20px and bold
- */
 .calculator .buttons input[type="button"] {
     margin-bottom: 10px;
     width: 48%;
@@ -295,12 +249,6 @@ aside a .material-icons {
     .financials > div > .figure {
         font-size: 26px;
     }
-
-    /*
-     * if screen is larger than 1024px:
-     * set calculator result font-size as 14px and height as 30px;
-     *calculator width as just plain 20% (no calc);
-     */
     .calculator {
         width: 20%;
     }
